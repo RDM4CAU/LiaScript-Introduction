@@ -1,14 +1,13 @@
 <!--
-author: alle zusammen
-email: mail@mirdochmal.de
-version: 0.0.1
-date: 2025-12-05
-comment: Kleiner Einstieg in LiaScript, FDM-SH AG Kompetenzentwicklung
+author: Britta Petersen
+email: b.petersen@rz.uni-kiel.de
+version: 0.1.0
+date: 2024-10-17
+comment: Ergebnis der Hands-On-Phase; Einstieg in LiaScript
 language: de
 narrator: Deutsch Female
-repository: Hier kannst Du Dein Repo angeben.
+repository: https://github.com/RDM4CAU/LiaPlayground
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
-licence: CC By
 -->
 
 # LiaScript Einstieg
@@ -16,13 +15,12 @@ licence: CC By
 Guten Morgen! :-)
 
 # A. Grundlage: Markdown
-LiaScript ist eine Erweiterung von Markdown und ein zugehöriger [Interpreter](https://liascript.github.io/). Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
+LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
 
 **Die Sytax, die ggf. von Markdown schon bekannt ist, kann also auch hier angewendet werden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
 
 -> LiaScript-Dokumente sind Textdokumente, deren Inhalt in einfachsten Texteditoren gelesen und bearbeitet werden können.  
 
--> LiaScript-Dokumente können via https://liascript.github.io/ geparsed werden und sind einfach via Browser zu teilen.
 
 
 ## A.1 Inhalte strukturieren
@@ -41,9 +39,6 @@ Es sind maximal 6 Ebenen möglich.
 
 ---
 
-
-A.1.1 Erzwungene Überschriften
-
 __Achtung!__
 
 LiaScript legt automatisch eine neue Seite für jede eingefügte Überschrift an, egal auf welcher Ebene.
@@ -58,11 +53,12 @@ Hier folgt dann der Inhalt....
 
 </section>
 ```
-
-Probiere das mal aus!
-
 Ergebnis:
 
+<section>
+# Wir brauchen hier eine Überschrift!
+
+Hier folgt dann der Inhalt.... 
 
 Das funktioniert auch mit `<article>` statt `<section>`:
 
@@ -75,10 +71,14 @@ Und noch ein bisschen mehr Inhalt...
 </article>
 ```
 
-Probiere das auch mal aus!
+</section>
 
-Ergebnis:
+<article>
+## Wir brauchen hier eine weitere Überschrift!
 
+Und noch ein bisschen mehr Inhalt... 
+
+</article>
 
 ---
 
@@ -88,20 +88,25 @@ Ergebnis:
 Huch? So geht es auch?
 ===
 
-Und so auch?
+Und so?
 ---
 ```
 
-Probiere das auch mal aus!
+Huch so geht es auch?
+===
 
-Ergebnis:
+Und so?
+---
+
+
+Absätze
+===
+LiaScript braucht eine Leerzeile zwischen Textblöcken, um einen Absatz erkennen zu können. 
 
 
 
 
-A.1.2 Absätze
-
-LiaScript braucht eine Leerzeile zwischen Textblöcken, um einen Absatz erkennen zu können. Mehrere Leerzeilen hintereinander werden nicht als mehrere Leerzeilen erkannt. Zusätzlicher Abstand muss z. B. mit `<br>` erzwungen werden:
+Mehrere Leerzeilen hintereinander werden nicht als mehrere Leerzeilen erkannt. Zusätzlicher Abstand muss z. B. mit `<br>` erzwungen werden:
 
 ```
 Ich will mehr
@@ -111,10 +116,10 @@ Ich will mehr
 Abstand
 ```
 ---
-
-
 Ich will mehr
-
+<br>
+<br>
+<br>
 Abstand.
 
 ---
@@ -130,8 +135,10 @@ Abstand
 
 ---
 
-Ich will mehr
-
+Ich will mehr\
+\
+\
+\
 Abstand
 
 ---
@@ -139,10 +146,12 @@ Abstand
 
 Horizontale Linien: `---`
 
+---
 
 
 
-A.2 Text formatieren
+
+## A.2 Text formatieren
 
 Auszeichnungen für Textformatierungen sind vielleicht von Markdown her schon bekannt. Hier nochmal eine ganz schnell eine Wiederholung:
 
@@ -174,13 +183,8 @@ Um ein Wort oder einen Satz als Code zu kennzeichnen, wird es in Backticks (`) e
 
 ---
 
-Formatiere nach Belieben:
-
-AG Kompetenzentwicklung
-Die Arbeitsgemeinschaft Kompetenzentwicklung möchte dem steigenden Bedarf nach gezielter Schulung im Umgang mit Forschungsdaten in Schleswig-Holstein begegnen. Sie fördert daher die Vernetzung von FDM-Multiplikatorinnen und -Multiplikatoren, den einrichtungsübergreifenden Austausch zum Thema Kompetenzentwicklung sowie das Bewusstsein zum nachhaltigen Umgang mit Forschungsdaten.
-
-
-A.2.1 Blöcke
+Blöcke
+===
 
 Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
 
@@ -194,48 +198,45 @@ Dieser Block soll einen hellblauen Hintergrund haben
 
 Ergebnis:
 
-
+<!-- style="color: red" -->
 Dieser Block soll in rotem Text erscheinen.
 
-
+<!-- style="background-color: lightblue;"-->
 Dieser Block soll einen hellblauen Hintergrund haben
 
-
-
-
-A.3 Listen
+## A.3 Listen
 
 Unsortierte Listen können mit `-` oder `*` erzeugt werden.
 
 Für jede weitere Ebene `Leerzeile + Leerzeichen`
 
-2 Karotte(n)
-1 Zwiebel(- n)
-3 Tomate(n)
-evtl. Kräuter
+- 2 Karotte(n)
+- 1 Zwiebel(- n)
+- 3 Tomate(n)
+- evtl. Kräuter
 
-frisch
-getrocknet
+  - frisch
+  - getrocknet
 
-next
+    - next
        
-next next
+      - next next
 
-Salz und Pfeffer
-Paprikapulver
-1 EL Olivenöl
+- Salz und Pfeffer
+- Paprikapulver
+- 1 EL Olivenöl
 
 ---
 
 Sortierte Listen entstehen nach mit `Ziffer + .`
 
-dies
-das
-und jenes
-**Wir müssen selbst auf die korrekte Nummerierung aufpassen!**
+1. dies
+2. das
+3. und jenes
+10. **Wir müssen selbst auf die korrekte Nummerierung aufpassen!**
 
 
-A.4 Tabellen
+## A.4 Tabellen
 
 Für Tabellen gelten die gängigen Markdownregeln:
 
@@ -263,12 +264,6 @@ Die Ausrichtung des Textes in den Spalten:
 | :--------- | ---------: | :--------: |
 | Item 1     | Item 2     | Item 3     |
 
-
-Erstelle eine eigene Tabelle!
-
-
-
-
 ---
 
 Wenn Liascript merkt, dass Werte in der Tabelle stehen, bietet es an, die Werte als Diagramm darzustellen:
@@ -294,14 +289,14 @@ Wenn dies nicht gewünscht ist `<!-- data-type="none" -->` oberhalb der Tabelle.
 
 wird zu:
 
-
+<!-- data-type="none" style="width: 40%" -->
 | Stoff       | Gramm       |
 | ----------- | ----------- |
 | ~~Eiweiß~~  | 6.31 g      |
 | Fett        | 2.75 g      |
 | Kohlenhydr. | **26.48 g** |
 
-A.5 Diagramme
+## A.5 Diagramme
 
 Wie wir eben schon gesehen haben bietet Liascript automatisch Diagramme an, wenn Werte in Tabellen stehen.
 
@@ -355,7 +350,7 @@ Die Ausrichtungen der Daten haben Einfluß auf die Darstellung:
 
 Mit `<!-- data-transpose -->` drehen:
 
-
+<!-- data-transpose style="width: 40%" -->
 | Stoff       | Gramm       |
 | ----------- | ----------- |
 | ~~Eiweiß~~  | 6.31 g      |
@@ -363,27 +358,27 @@ Mit `<!-- data-transpose -->` drehen:
 | Kohlenhydr. | **26.48 g** |
 
 
-A.6 Hervorhebung und hevorgehobene Zitate
+## A.6 Hervorhebung und hevorgehobene Zitate
 
-Die **schleswig-holsteinische Landesinitiative zum FDM** fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
+>Die **schleswig-holsteinische Landesinitiative zum FDM** fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
+>
+>>https://fdm-sh.de/
 
-https://fdm-sh.de/
+>Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
+>
+> -- https://fdm-sh.de/
 
-Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
-
-https://fdm-sh.de/
-
-**Verschachtelte Hervorhebung und weitere Elemente**
-
-Hervorebungen können ineinander verschachtelt werden und weitere Elemente enthalten, wie z. B.
-
-- Listen
-
-- Tabellen
-
-| Column 1 | Column 2 | Column 3 |
-| -------- | :------: | -------: |
-| Text     |   Text   |     Text |
+>>**Verschachtelte Hervorhebung und weitere Elemente**
+>
+>Hervorebungen können ineinander verschachtelt werden und weitere Elemente enthalten, wie z. B.
+>
+>> - Listen
+>>
+>> - Tabellen
+>
+>| Column 1 | Column 2 | Column 3 |
+>| -------- | :------: | -------: |
+>| Text     |   Text   |     Text |
 
 # B. Animationen
 
@@ -463,26 +458,6 @@ R1.3. (Meta)data meet domain-relevant community standards
 
 Wir können auch Inline {5}{animieren}.
 
----
-
-
-## B.1 Eigene Animation
-
-Annimiere folgenden Text nach Belieben:
-
-
-Die schleswig-holsteinische Landesinitiative zum FDM ist
-
-- ein Zusammenschluss von Hochschulen und Forschungseinrichtungen in Schleswig-Holstein
-
-Diese Initiative fördert 
-
-- kooperative Lösungen und 
-- ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. 
-
-Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
-
-
 # B.1 Animationen mit Sprachausgabe
 
 {{|>}}
@@ -533,68 +508,47 @@ Kurzer Blick auf die Verweismöglichkeiten...
 ## C.1 Externe Verweise
 
 einfachste Möglichkeit: Link einfügen:
+https://liascript.github.io/ 
 
-
-oder `[Bezeichnung](link)`
-Geschäftordnung der schleswig-holsteinische Landesinitiative zum Forschungsdatenmanagement
-https://macau.uni-kiel.de/receive/macau_mods_00005047
+oder so:
+[Geschäftordnung der schleswig-holsteinische Landesinitiative zum Forschungsdatenmanagement](https://macau.uni-kiel.de/receive/macau_mods_00005047)
 
 Beitrag von André Dietrich und Sebastian Zug auf OERinfo:
-Warum braucht offene Bildung eine eigene Sprache? Wie LiaScript OER befördern kann
-https://open-educational-resources.de/warum-braucht-offene-bildung-eine-eigene-sprache-warum-liascript/
+[Warum braucht offene Bildung eine eigene Sprache? Wie LiaScript OER befördern kann](https://open-educational-resources.de/warum-braucht-offene-bildung-eine-eigene-sprache-warum-liascript/)
 
 
 ## C.2 Interne Verweise
 
-Interne Verweise werden mit `[Bezeichnung](#Kapitelbezeichnung-ohne-leerzeichen)
+Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
-Weiter geht es mit den Verweisen auf Abbildungen
+## C.2 Bilder
 
-## C.2 Abbildungen
+![5 V-Freiheiten für Offenheit](https://open-educational-resources.de/wp-content/uploads/20180111Infografik_5V.jpg "5 V-Freiheiten für Offenheit“  unter CC BY 4.0 basierend auf „Defining the ‘Open’ in Open Content and Open Educational Resources“ von David Wiley auf www.opencontent.org/definition/ unter CC BY 4.0.")
 
-5 V-Freiheiten für Offenheit
-https://open-educational-resources.de/wp-content/uploads/20180111Infografik_5V.jpg 
-
-"5 V-Freiheiten für Offenheit“  unter CC BY 4.0 basierend auf „Defining the ‘Open’ in Open Content and Open Educational Resources“ von David Wiley auf www.opencontent.org/definition/ unter CC BY 4.0."
-
-3,5″-Diskette
-https://mainzed.pages.gitlab.rlp.net/open-educational-resources/cms/img/uploads/3-5_zoll_floppy_disc.jpg
+![3,5″-Diskette](https://mainzed.pages.gitlab.rlp.net/open-educational-resources/cms/img/uploads/3-5_zoll_floppy_disc.jpg)
 
 
 
 ## C.3 Sound & Musik
 
-Teddybears - Sunshine
-https://soundcloud.com/user34473679/sets/teddybears-sunshine
+?[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
 
-DINI Zertifikat
-https://creators.spotify.com/pod/profile/dinitus/episodes/Das-DINI-Zertifikat-e37ctsa
-
-
+??[DINI Zertifikat](https://creators.spotify.com/pod/profile/dinitus/episodes/Das-DINI-Zertifikat-e37ctsa)
 
 ## C.4 Videos 
 
+!?[OER Erklärvideo](https://www.youtube.com/watch?v=1WnZD7E8FKY "Was versteht man eigentlich unter Open Educational Resources (OER)? Lizenziert unter der Creative Commons-Lizenz CC BY-SA 4.0. ")
 
-OER Erklärvideo
-https://www.youtube.com/watch?v=1WnZD7E8FKY 
-
-"Was versteht man eigentlich unter Open Educational Resources (OER)? Lizenziert unter der Creative Commons-Lizenz CC BY-SA 4.0. "
-
-Data Sharing and Management
-https://www.youtube.com/watch?v=66oNv_DJuPc 
-
-"Das beliebte Snafu Video"
-
-
+!?[Data Sharing and Management](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
 
 
 ## C.5 A Modell, Simulationen etc.
 
-https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd
+??[](https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd)
 
-https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html
+??[](https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
 
-https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129
+??[](https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129)
 
 ## C.6 IFrames
 
@@ -613,44 +567,43 @@ https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrol
 
 # D. Fragen und Quizze
 
-**Single-Choice Quiz**: ´[(x)]´
 
 **Single-Choice Quiz Beispiel:**
 Wie heißt die Hauptstadt von Frankreich?
 
-London
-Berlin
-Paris
-Rom
-Kiel
+    - [( )] London
+    - [( )] Berlin
+    - [(X)] Paris
+    - [( )] Rom
+    - [( )] Kiel
+***********************************************************************
+>Toll! das ist Richtig ! 🔆
+
+***********************************************************************
 
 ---
 
-Erstelle ein eigenes Single-Choice Quiz!
-
----
-
-**Single-Choice Quiz**: ´[[x]]´
-
+<div style="background-color: lightblue;padding: 25px">
 **Multiple-Choice Quiz Beispiel:** Which of the following are primary colors?
 
-Red
-Blue
-Green
-Yellow
+- [[X]] Red
+- [[X]] Blue
+- [[ ]] Green
+- [[X]] Yellow
+- [[?]] Grün ist falsch
+
+</div>
 
 ---
 
-Erstelle ein eigenes **Multiple-Choice Quiz**!
+>**Text-Quiz Beipsiel:**
+>Frage: Wie heißt der Open Access Textpublikationsdienst der Christian-Albrechts-Universität zu Kiel (Nutze Großbuchstaben)?
+>
+>[[MACAU]]
 
 ---
 
-**Text-Quiz Beipsiele**
-Frage: Wie heißt der Open Access Textpublikationsdienst der Christian-Albrechts-Universität zu Kiel (Nutze ausschließlich Großbuchstaben)?
-
-[[MACAU]]
-
----
+**Lückentext Quiz Beispiel:**
 
 **Vervollständige den folgenden Satz:**
 
@@ -658,24 +611,32 @@ Leitprinzipien im FDM sind die [[FAIR]]-Prinzipien.
 
 ---
 
+<div style="color: tomato;padding: 25px">
+
 **Vervollständige den folgenden Satz:**
 
 Die FAIT-Prinzipien stehen für F=[[findability]], A=[[accessibility]], I=[[interoperability]], and R=[[reusability]].
 
+</div>
 
 ---
 
-**Drop-down Auswahl Quiz**
-
+<div style="background-color: blue;color: white;padding: 150px;">
 
 **Welche Leitlinie der DFG Leitlinien zur guten wissenschaftlichen Praxis beschäftigt sich mit der Dokumentation?**
 
 [[ Leitlinie 1 | Leitlinie 5 | Leitlinie 3 | (Leitlinie 12) ]]
+***********************************************************************
+![Party-Gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjNtY3A1aHI4djV1cnhoeHBpNmk5MGFzengzMDI0c3RpNWt6dDg4ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fUQ4rhUZJYiQsas6WD/giphy.webp)
 
+💓 Richtig! 💓
+***********************************************************************
+
+</div>
 
 ---
 
-**Matrix-Quiz-Beispiel:** Ordne die Aussagen den FAIR-Prinzipien zu.
+**Matrix-Beispiel:** Ordne die Aussagen den FAIR-Prinzipien zu.
 
 - [[Findable] [Accessible] [Interoperable] [Reusable]]
 - [    [ ]           [ ]          [X]        [ ]     ]  Daten sollten in einem möglichst offenen Format vorliegen.
@@ -684,6 +645,7 @@ Die FAIT-Prinzipien stehen für F=[[findability]], A=[[accessibility]], I=[[inte
 - [    [X]           [ ]          [ ]        [X]     ]  Dateinamen sollten auf den Inhalt verweisen.
 
 ---
+
 
 
 # E. ASCII-Art
@@ -699,34 +661,3 @@ Mit Ascii kann man zeichnen 👌
         /____\
   Zeit⏳       Zielgruppe👥 
 ```
-
----
-
-ASCII im Quiz:
-
-
-Wie bezeichnet man die Symbole?
-
-<!-- data-show-partial-solution -->
-``` ascii
-  .--------------.    +----------------------+
- /" [[ source ]] "\   |" [[ transformer ]] " |
-'------------------'  +----------------------+
-   .------------.      .--------------------.
-  (" [[ bus ]] " )     |"  [[ storage ]]  " |
-   '------------'      '--------------------'
- .----------------.
-  \" [[ sink ]] "/
-   '------------'
-```
-
-
-# F. Frag die Künsteliche Intelligenz
-
->**Wenn Du mal nicht weiter weißt...**
->
->https://phind.com
->
->oder
->
->https://openai.com/chatgpt/

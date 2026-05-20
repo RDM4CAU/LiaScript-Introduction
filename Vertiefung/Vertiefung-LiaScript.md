@@ -15,6 +15,96 @@ import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
 import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
+## Teil II: Vertiefung
+
+Herzlich Willkommen! ✨
+===
+Schön, dass Sie hier sind!
+
+\
+Agenda heute 💪
+===
+
+- Kurze Vorstellungsrunde
+- Recap Teil I: Einstieg
+- ***Hands-On-Phase Teil II: Vertiefung***
+
+  - On- und Offline Arbeitsmöglichkeiten
+  - LiaScript Exporter
+  - Einbindung in das LMS OpenOlat
+  - Erweiterungen & ausführbarer Code
+
+- Fragen & Diskussion
+
+### Vorstellungsrunde 🤝
+
+> **Stellen Sie sich bitte kurz vor!**
+>
+> >Nennen Sie Name, Fachbereich & Ihre Motivation heute hier zu sein :-)
+
+### Recap Einstieg
+
+> - **Was ist LiaScript?**
+>
+> - [**LiaScript Live Editor**](https://liascript.github.io/LiveEditor/?/edit/do4c42HSc8W3Jv45wWcHX6rX)
+>
+> - **Grundlagen der Formatierung**
+>
+>   - Überschriften
+>   - Textformatierungen
+>   - Listen
+>   - Tabellen
+>   - Verweise
+>   - Einbindung von Medien (Abbildungen, Audio, Video, Simulationen, Modelle)
+>   - Annimation
+>   - Sprachausgaben
+>   - Quizzes
+>   - individuelles Styling mit html Kommentaren
+
+<br>
+
+<iframe src="https://liascript.github.io/LiveEditor/?/edit/do4c42HSc8W3Jv45wWcHX6rX" width="100%" height="600" style="border:1px solid black;">
+</iframe>
+
+### Recap Classroom
+
+Eine Funktion, die im Einstieg nicht besprochen wurde, ist die LiaScript CLassroom Funktion, die wir noch einmal ganz kurz ausprobieren...
+
+{{1-2}}
+*********************
+**Was ist LiaScript?**
+
+[[Tool für Selbstlernmaterial]] Ein Tool für die Entwicklung von Selbstlernmaterial
+[[KI-Tool]] Ein KI-Tool
+[[Erweiterung Markdown]] Eine Erweiterung der Auszeichnungssprache Markdown
+[[komplierte Programmiersprache]] Eine komplierte Programmiersprache
+[[Open Source Tool]] Ein Open Source Tool
+
+*********************
+
+{{2-3}}
+*********************
+**Welches der folgenden Zeichen generiert eine Überschrift in LiaScript?**
+
+[[?]] Das Fragezeichen: ?
+[[#]] Die Raute: #
+[[$]] Das Dollarzeichen: $
+[[!]] Das Ausrufezeichen: !
+
+*********************
+
+{{3-4}}
+*********************
+**Welche der folgenden Auszeichnungen kodiert ein Single-Choice-Quizz in LiaSCript?**
+
+[[Multiple-Choice]] [[x]]
+[[Single-Choice]] [(x)]
+[[Text-Gap]] [[Single-Choice]]
+
+*********************
+
+
+
 # Liascriptdateien erstellen
 
 ## Grundlagen
