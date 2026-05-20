@@ -16,7 +16,7 @@ link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau
 import:   https://github.com/LiaTemplates/Pyodide
 -->
 
-# Ausprobierkurs
+# Ausprobiermodul
 
 Dieses Dokument ist ein **erster Kontakt** mit einem kleinen LiaScript-Kurs.
 

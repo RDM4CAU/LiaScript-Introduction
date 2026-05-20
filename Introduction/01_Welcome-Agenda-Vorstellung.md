@@ -42,13 +42,13 @@ link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau
 
 ><h2>Unsere Agenda für die nächsten zwei Stunden 💪</h2>
 >
-><h4>[LiaScript (aus Sicht Lernender) ausprobieren]()</h4>
+><h4>[LiaScript (aus Sicht Lernender) ausprobieren](https://liascript.github.io/course/?https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/03_Ausprobiermodul.md#1)</h4>
 >
-><h4>[OER & LiaScript - Vision & Motivation]()</h4>
+><h4>[OER & LiaScript - Vision & Motivation](https://liascript.github.io/course/?https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/02_OER_LiaScript-Motivation.md)</h4>
 >
-><h4>[LiaScript selbst erstellen (Hands-On-Phase)]()</h4>
+><h4>[LiaScript selbst erstellen (Hands-On-Phase)](https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/04_Hands-on-Vorlage.md)</h4>
 >
-><h4>[LiaScripte teilen]()</h4>
+><h4>LiaScripte teilen</h4>
 >
 ><h4>Fragen & Diskussion</h4>
 
@@ -61,10 +61,10 @@ link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau
 ### Materialien Hands-On-Phase
 
 **Link zur Arbeitsdatei für die Hands-On-Phase:**
-https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaPlayground/refs/heads/main/Einstieg-LiaScript_unformatiert.md
+https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/04_Hands-on-Vorlage.md
 
 **Arbeitsdatei Hands-On-Phase formatiert (Ergebnis):**
-https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaPlayground/refs/heads/main/Einstieg-LiaScript.md
+https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/05_Ergebnis_Hands-on.md
 
 **LiaScript Dokumentation**
 https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#1
