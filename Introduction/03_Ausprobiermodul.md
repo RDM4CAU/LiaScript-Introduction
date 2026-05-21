@@ -146,8 +146,15 @@ Das folgende Beispiel eines YAML wurde mit dem OERSI Metadatenformular erstellt 
 
 > **Lesart:** Jedes `"name": [...]`""-Element ist eine maschinenlesbare Aussage über diesen Kurs. Wird er als seprate Datei einem Git-Repositorium beigefügt, ist er lesbar für Suchmaschinen, OER-Repositorien und Linked-Data-Werkzeuge. Genau diese Form von Metadaten macht ein Lernmaterial als *Open Educational Resource* im Web auffindbar, zitierbar und nachnutzbar.
 
+> [!NOTE] 
+> Im LiaScript Header können ebenfalls Metadaten hinterlegt werden. In der oberen rechten Ecke befindet sich ein **i-Icon** (ℹ️). Klicken Sie auf das Icon. Sie finden Metadaten zu diesm Modul in einer übersichtlichen Darstellung.
+
 > [!TIP]  
-> In der oberen rechten Ecke befindet sich ein **i-Icon** (ℹ️). Klicken Sie auf das Icon. Sie finden Metadaten zu diesm Modul in einer übersichtlichen Darstellung.
+> Auch andere LiaScripte können dargestellt werden.
+>
+> Möchten Sie mehr über das Publizieren von OER erfahren? Schauen Sie sich dieses Tutorial der Technische Informationsbibliothek (TIB) Hannover an:
+
+??[](https://liascript.github.io/course/?https://raw.githubusercontent.com/TIBHannover/oer-github-tutorial-liascript/main/tutorial.md#1)
 
 ## 2. Datenkompetenzen 
 

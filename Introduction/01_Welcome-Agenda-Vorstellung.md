@@ -58,13 +58,16 @@ link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau
 >
 > >Nennen Sie Name, Fachbereich & Ihre Motivation heute hier zu sein :-)
 
-### Materialien Hands-On-Phase
+# Materialien Hands-On-Phase
 
 **Link zur Arbeitsdatei für die Hands-On-Phase:**
 https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/04_Hands-on-Vorlage.md
 
 **Arbeitsdatei Hands-On-Phase formatiert (Ergebnis):**
 https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/05_Ergebnis_Hands-on.md
+
+**Kurs-Template:**
+https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/RDM4CAU/LiaScript-Introduction/refs/heads/main/Introduction/07_Kurs-Template.md
 
 **LiaScript Dokumentation**
 https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#1
